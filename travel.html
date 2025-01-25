@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en"> <!--begin::Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Khumbu</title><!--begin::Primary Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous"><!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous"><!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
+    <link rel="stylesheet" href="admin/dist/css/bootstrap-icons/bootstrap-icons.min.css"><!--end::Required Plugin(AdminLTE)--><!-- apexcharts -->
+    <link rel="stylesheet" href="admin/dist/css/adminlte-custom.css"><!--end::Required Plugin(AdminLTE)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css" integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous"><!-- jsvectormap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css" integrity="sha256-+uGLJmmTKOqBr+2E6KDYs/NRsHxSkONXFHUL0fy2O/4=" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js" type="text/javascript"></script>
+    <script src="https://m-e-conroy.github.io/angular-dialog-service/javascripts/dialogs.min.js" type="text/javascript"></script>
+</head> <!--end::Head--> <!--begin::Body-->
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary"> <!--begin::App Wrapper-->
+    <div class="app-wrapper"> <!--begin::Header-->
+        <nav class="app-header navbar navbar-expand bg-body"> <!--begin::Container-->
+            <div class="container-fluid"> <!--begin::Start Navbar Links-->
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button"> <i class="bi bi-list"></i> </a> </li>
+                    <li class="nav-item d-none d-md-block"> <a href="index.html" class="nav-link"><i class="bi bi-speedometer"></i> Dashboard</a> </li>
+                    <li class="nav-item d-none d-md-block"> <a href="javascript:void(0);" class="nav-link">Travel</a> </li>
+                    <li class="nav-item d-none d-md-block"> <a href="business.html" class="nav-link">Business</a> </li>
+                    <li class="nav-item d-none d-md-block"> <a href="investment.html" class="nav-link">Investment</a> </li>
+
+                </ul> <!--end::Start Navbar Links--> <!--begin::End Navbar Links-->
+                <ul class="navbar-nav ms-auto"> <!--begin::Navbar Search-->
+                    
+                    <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <img src="admin/dist/assets/img/user1-128x128.jpg" class="user-image rounded-circle shadow" alt="User Image"> <span class="d-none d-md-inline">Kagiso Mawhite</span> </a>
+                  
+                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
+                            <li class="user-header text-bg-primary"> <img src="admin/dist/assets/img/user1-128x128.jpg" class="rounded-circle shadow" alt="User Image">
+                                <p>
+                                   Kagiso Mawhite
+                                   <small>LoxinPreneur</small>
+                                </p>
+                            </li> <!--end::User Image--> <!--begin::Menu Body-->
+                            <li class="user-body"> <!--begin::Row-->
+                                <div class="row">
+                                    <div class="col-4 text-center"> <a href="#">Profile</a> </div>
+                                    <div class="col-4 text-center"> <a href="#">Friends</a> </div>
+                                    <div class="col-4 text-center"> <a href="#">Signout </a> </div>
+                                </div> <!--end::Row-->
+                            </li> <!--end::Menu Body--> <!--begin::Menu Footer-->
+                           </ul>
+                        </li>
+                    
+                    <li class="nav-item"> <a class="nav-link"  href="#" role="button"> <i class="bi bi-gear-fill"></i> Settings </a> </li> <!--end::Navbar Search--> <!--begin::Messages Dropdown Menu-->
+                    <li class="nav-item"> <a class="nav-link"  href="#" role="button"> <i class="bi bi-question-circle-fill"></i>  Help </a> </li>
+                    
+                    
+                
+                </ul> <!--end::End Navbar Links-->
+            </div> <!--end::Container-->
+        </nav> <!--end::Header--> <!--begin::Sidebar-->
+    
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
+            <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link"> <!--begin::Brand Image--> <img src="admin/dist/images/logo-white.png"  class="brand-image opacity-95"> <!--end::Brand Image--></a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            <div class="sidebar-wrapper">
+                <nav class="mt-2 sidebar-menu"> <!--begin::Sidebar Menu-->
+                    <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                            
+                        <li class="nav-item"> <a href="#addtrip" class="nav-link"> <i class="nav-icon bi bi-plus-square-fill"></i>
+                            <p>
+                                New Trip Request
+                            </p>
+                          </a>
+                        </li>
+                        <li class="nav-item"> <a href="travel/available-transport.html" class="nav-link"> <i class="nav-icon bi bi-search"></i>
+                            <p>
+                                Available Transport
+                            </p>
+                          </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="travel/bookings.html"><i class="bi bi-file-earmark-plus-fill"></i> <p>My Bookings </p></a>
+                        </li>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-credit-card-2-back-fill"></i>
+                            <p>
+                                Travel Voucher
+                            </p>
+                          </a>
+                        </li>
+                    <li class="nav-item"> <a href="travel/notifications.html" class="nav-link"> <i class="nav-icon bi bi-chat-right-fill"></i>
+                        <p>
+                            Trip Notifications <span class="navbar-badge badge text-bg-pending">3</span> 
+                        </p>
+                      </a>
+                    </li>
+                    </ul>
+                  </nav>
+            </div>
+        </aside>
+        <main class="app-main"> <!--begin::App Content Header-->
+            <div class="app-content-header"> <!--begin::Container-->
+                <div class="container-fluid"> <!--begin::Row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                          <h4 class="mb-0">Travel</h4>
+                        </div>
+                          <div class="col-sm-6">
+                              <ol class="breadcrumb float-sm-end">
+                                  <li class="breadcrumb-item"><a href="./index.html   ">..</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">
+                                      Travel
+                                  </li>
+                              </ol>
+                          </div>
+                      </div> <!--end::Row-->
+                </div> <!--end::Container-->
+            </div> <!--end::App Content Header--> <!--begin::App Content-->
+            <div class="app-content"> <!--begin::Container-->
+                <div class="container-fluid"> <!--begin::Row-->
+                    <div class="row"> <!--begin::Col-->
+                        <div class="tabs">
+                            <input type="radio" name="tabs" id="tabone" checked="checked">
+                            <label for="tabone">Travel Calculator</label>
+                            <div class="tab">
+                                <p class="fw-bold fs-4 mt-3">Calculate Travel Expenses</p>
+                                <div class="row mt-5">
+                                    <p class="fw-bold">Commuting Expense:</p>
+                                    <div class="col-md-4">
+                                        <input class="mt-3 form-range" id="slider1" type="range" min="0" max="50000" value="0" oninput="rangeValue.value = this.value">
+                                     </div>
+                                     <div class="col-md-4">
+                                        <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span> <input class="form-control" type="text" id="rangeValue" value="0"></div>
+                                     </div>  
+                                      
+                                     <p class="fw-bold">Private Travel Expense:</p>
+                                     <div class="col-md-4">
+                                         <input class="mt-3 form-range" id="slider1" type="range" min="0" max="50000" value="0" oninput="rangeValue1.value = this.value">
+                                      </div>
+                                      <div class="col-md-4">
+                                         <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span> <input class="form-control" type="text" id="rangeValue1" value="0"></div>
+                                      </div> 
+
+                                      <p class="fw-bold">Holiday/Leisure Expense:</p>
+                                      <div class="col-md-4">
+                                          <input class="mt-3 form-range" id="slider1" type="range" min="0" max="50000" value="0" oninput="rangeValue2.value = this.value">
+                                       </div>
+                                       <div class="col-md-4">
+                                          <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span> <input class="form-control" type="text" id="rangeValue2" value="0"></div>
+                                       </div> 
+
+                                       <p class="fw-bold">Total Expenses:</p>
+                                        <div class="col-md-4"> 
+                                            <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input class="form-control" type="text" id="total" value="0"></div>
+                                        </div>
+                                        <div class="col-md-4"> 
+                                         <input type="button" id="calculate" class="btn btn-primary w-25" value="Calculate"> 
+                                        </div>
+                                </div>
+                                
+                            </div>
+                            <input type="radio" name="tabs" id="tabtwo">
+                            <label for="tabtwo">Personal Budget</label>
+                            <div class="tab">
+                                <p class="fw-bold fs-4 mt-3">Calculate Personal Budget</p>
+                                <div class="row mt-5">
+                                    <p class="fw-bold">Monthly Income:</p>
+                                    <div class="col-md-4">
+                                        <input class="mt-3 form-range" id="slider1" type="range" min="0" max="50000" value="0" oninput="monthlyIncome.value = this.value">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span> <input class="form-control" type="text" id="monthlyIncome" value="0"></div>
+                                    </div> 
+
+                                    <p class="fw-bold">Non-Travel Expenses:</p>
+                                    <div class="col-md-4">
+                                        <input class="mt-3 form-range" id="slider1" type="range" min="0" max="50000" value="0" oninput="nonTravelExpenses.value = this.value">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span> <input class="form-control" type="text" id="nonTravelExpenses" value="0"></div>
+                                    </div> 
+                                    
+                                    <p class="fw-bold">Total Expenses:</p>
+                                        <div class="col-md-4"> 
+                                            <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input class="form-control" type="text" id="totalBudget" value="0"></div>
+                                        </div>
+                                        <div class="col-md-4"> 
+                                         <input type="button" id="calcTotalBudget" class="btn btn-primary w-25" value="Calculate"> 
+                                        </div>
+                                </div>
+                            </div>
+                             
+                            <input type="radio" name="tabs" id="tabfour">
+                            <label for="tabfour">Vehicle Listing</label>
+                            <div class="tab">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-12 mt-4">
+                                        <div class="loader-inline d-flex justify-content-center align-items-center d-none" style="height:250px;"><div class="spinner-border text-success" role="status"> <span class="visually-hidden">Loading...</span> </div></div>
+
+                                        <div class="d-flex justify-content-center align-items-center d-block" id="addvehicle-container" style="height: 350px;">
+                                            <a class="btn btn-primary btn-sm" id="addvehicle"><i class="bi bi-plus-circle"></i> Add Vehicle </a>
+                                        </div>
+                                        <form class="vehicleform d-none"> <!--begin::Body-->
+                                            <div class="card-body">
+                                                <div class="mb-3"> Vehicle Model: <input type="text" class="form-control" id="vehicle-model"></div>
+                                                <div class="mb-3"> Registration Number: <input type="text" class="form-control" id="reg-number"></div>
+                                                <div class="mb-3"> Destination: <input type="text" class="form-control" id="vehicle-model"></div>
+                                                <div class="mb-3"> Available From: <input type="date" class="form-control" id="available-from"></div>
+                                                <div class="mb-3">Return Trip: <div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio-returntrip" id="btnradio1" autocomplete="off" checked> <label class="btn btn-outline-light" for="btnradio1">Yes</label> <input type="radio" class="btn-check" name="btnradio-returntrip" id="btnradio1-1" autocomplete="off"> <label class="btn btn-outline-light" for="btnradio1-1">No</label>  </div></div>
+                                                <div class="mb-3"> Return Date: <input type="date" class="form-control" id="return-date"></div>
+                                                <div class="mb-3"> Cost Per Passenger: <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input class="form-control" type="text" id="cost-per-passenger" value="0"></div>
+                                                <div class="mb-3 mt-3"> Open For Negotiation: </br><div class="btn-group mb-2" role="group" aria-label="Basic radio toggle button group"> <input type="radio" class="btn-check" name="btnradio-upforneg" id="btnradio2" autocomplete="off" checked> <label class="btn btn-outline-light" for="btnradio2">Yes</label> <input type="radio" class="btn-check" name="btnradio-upforneg" id="btnradio2-2" autocomplete="off"> <label class="btn btn-outline-light" for="btnradio2-2">No</label>  </div></div>
+                                                <div class="mb-3"> Seats Available: <input type="number" class="form-control" id="seats-available" min="1" max="20" placeholder="1"></div>
+                                                <div class="mb-3"> Upload Vehicle Image: <input type="file" class="form-control" id="vehicle-image"></div>
+                                            </div>
+                                            <div class="card-footer"> <a class="btn btn-primary">Add Vehicle</a> <a class="btn btn-danger" id="cancelvehicle">Cancel Vehicle</a></div> <!--end::Footer-->
+
+                                        </div> <!--end::Body--> <!--begin::Footer-->
+                                        </form> <!--end::Form-->
+                                      
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <input type="radio" name="tabs" id="tabthree">
+                            <label for="tabthree">Community Trips</label>
+                            <div class="tab">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-6 col-12 mt-4">
+                                        <table class="table table-striped align-middle">
+                                            <thead>
+                                                <tr>
+                                                    <th>Trip ID</th>
+                                                    <th>Departure</th>
+                                                    <th>Departure Date</th>
+                                                    <th>Destination</th>
+                                                    <th>Available Seats</th>
+                                                    <th>Cost Per Seat</th>
+                                                    <th>Open for Negotiation</th>
+                                                    <th>Return Date</th>
+                                                    <th>Tag Along</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td> 
+                                                        TRP9842
+                                                    </td>
+                                                    <td>Johannesburg</td>
+                                                    <td> 
+                                                        10 /01 / 25
+                                                    </td>
+                                                    <td>Pretoria</td>
+                                                    <td>4</td>
+                                                    <td>R200</td>
+                                                    <td>Yes</td>
+                                                    <td>20 / 01 / 25</td>
+                                                    <td>
+                                                        <span class="badge text-bg-primary fw-normal fs-7">one-way</span> <span class="badge text-bg-dark fw-normal fs-7">return</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 
+                                                        TRP9842
+                                                    </td>
+                                                    <td>Bloemfontein</td>
+                                                    <td> 
+                                                        10 /01 / 25
+                                                    </td>
+                                                    <td>Pretoria</td>
+                                                    <td>4</td>
+                                                    <td>R1500</td>
+                                                    <td>No</td>
+                                                    <td>20 / 01 / 25</td>
+                                                    <td>
+                                                        <span class="badge text-bg-dark fw-normal fs-7">one-way</span> <span class="badge text-bg-primary fw-normal fs-7">return</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 
+                                                        TRP9842
+                                                    </td>
+                                                    <td>Capetown</td>
+                                                    <td> 
+                                                        10 /01 / 25
+                                                    </td>
+                                                    <td>Mpumalanga</td>
+                                                    <td>2</td>
+                                                    <td>R1000</td>
+                                                    <td>Yes</td>
+                                                    <td>20 / 01 / 25</td>
+                                                    <td>
+                                                        <span class="badge text-bg-primary fw-normal fs-7">one-way</span> <span class="badge text-bg-dark fw-normal fs-7">return</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>        
+                             </div>
+                           
+
+                            <input type="radio" name="tabs" id="tabfive">
+                            <label for="tabfive">Trip History</label>
+                            <div class="tab">
+                                <table class="table m-0 table-bright mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th>Trip History ID</th>
+                                            <th>Trip ID</th>
+                                            <th>Member ID</th>
+                                            <th>Vehicle ID</th>
+                                            <th>Destination</th>
+                                            <th>Trip Date</th>
+                                            <th>Cost</th>
+                                            <th>Request Status</th>
+                                            <th>isReturn Trip</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>TRH1</td>
+                                            <td>TRP9842</td>
+                                            <td>MEM501</td>
+                                            <td>VEH221</td>
+                                            <td>Johannesburg</td>
+                                            <td>03/12/2004</td>
+                                            <td>R250.00</td>
+                                            <td><span class="badge text-bg-primary fw-normal">Accepted</span></td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TRH2</td>
+                                            <td>TRP1848</td>
+                                            <td>MEM502</td>
+                                            <td>VEH222</td>
+                                            <td>Durban</td>
+                                            <td>13/12/2004</td>
+                                            <td>R850.00</td>
+                                            <td><span class="badge text-bg-pending fw-normal">Rejected</span></td>
+                                            <td>No</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TRH3</td>
+                                            <td>TRP7429</td>
+                                            <td>MEM503</td>
+                                            <td>VEH223</td>
+                                            <td>Pretoria</td>
+                                            <td>20/12/2004</td>
+                                            <td>R400.00</td>
+                                            <td><span class="badge text-bg-primary fw-normal">Accepted</span></td>
+                                            <td>Yes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                           
+                     </div>  
+                </div>
+                     <!--------ADD TRIP FORM------->
+               <div id="addtrip" class="modal-window">
+                <div class="container-fluid"> <!--begin::Row-->
+                    <a href="#" title="Close" class="modal-close"><i class="bi bi-x-lg text-dark fs-5"></i></a>
+
+                    <div><h4 class="fw-bold">Add New Trip</h4></div>
+                         <div class="loader-inline d-flex justify-content-center align-items-center d-none" style="height:250px;"><div class="spinner-border text-success" role="status"> <span class="visually-hidden">Loading...</span> </div></div>
+                         <div class="triprequest-message d-flex justify-content-center align-items-center d-none" style="height:250px;"><h4>Request Successful...</h4><br/>
+                           
+                        </div>
+                         <div class="row mt-5 triprequestform-container" id="triprequestform-container"> <!--begin::Col-->
+                            <div class="col-12 triprequestform-wrapper">
+                               
+                            </div>  
+                    </div> 
+                </div> 
+               </div>                      
+            <!-----END ADD TRIP FORM------>
+            </div>       
+            </div>
+        </main>
+    </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <!-- <div id = "loading_indicator"> </div>-->
+    <div id="loading_indicator">
+        <div class="three-balls">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/browser/overlayscrollbars.browser.es6.min.js" integrity="sha256-H2VM7BKda+v2Z4+DRy69uknwxjyDRhszjXFhsL4gD3w=" crossorigin="anonymous"></script> <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script> <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
+    <script src="./admin/dist/js/adminlte.js"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+    <script src="./admin/dist/js/loading.js"></script>
+   
+    <script>
+        $(".triprequestform-wrapper").load("./travel/add-trip.html");
+    </script>
+    <script>
+    //ADDING VEHICLE LISTING//
+     $("#addvehicle").click(function(){
+        
+        $("#addvehicle-container").addClass("d-none");
+        $(".loader-inline").removeClass("d-none");
+            setTimeout(() => {
+                $(".loader-inline").addClass("d-none");
+               $("form").removeClass("d-none");
+	        }, 1500)
+            
+        });
+        $("#cancelvehicle").click(function(){
+            $("form").addClass("d-none");
+            $("#addvehicle-container").removeClass("d-none");
+        });
+    //END ADDING VEHICLE LISTING//
+
+    </script>
+    <script>
+      $("#calculate").focus(function() {
+                    var num1 = document.getElementById("rangeValue").value;
+                    var num2 = document.getElementById("rangeValue1").value;
+                    var num3 = document.getElementById("rangeValue2").value;    
+
+                    num1=parseInt(num1);
+                    num2=parseInt(num2);
+                    num3=parseInt(num3);
+
+                    document.getElementById("total").value=num1+num2+num3;
+        });
+        
+         $("#calcTotalBudget").focus(function() {
+
+            var monthlyIncome = $("#monthlyIncome").val();
+            var nonTravelExpenses = $("#nonTravelExpenses").val();
+            
+            
+            $("#totalBudget").val(monthlyIncome-nonTravelExpenses);
+
+        });
+</script> 
+     <script>
+        const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
+        const Default = {
+            scrollbarTheme: "os-theme-light",
+            scrollbarAutoHide: "leave",
+            scrollbarClickScroll: true,
+        };
+        document.addEventListener("DOMContentLoaded", function() {
+            const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+            if (
+                sidebarWrapper &&
+                typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined"
+            ) {
+                OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+                    scrollbars: {
+                        theme: Default.scrollbarTheme,
+                        autoHide: Default.scrollbarAutoHide,
+                        clickScroll: Default.scrollbarClickScroll,
+                    },
+                });
+            }
+        });
+    </script> <!--end::OverlayScrollbars Configure--> <!-- OPTIONAL SCRIPTS --> <!-- sortablejs -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js" integrity="sha256-ipiJrswvAR4VAx/th+6zWsdeYmVae0iJuiR+6OqHJHQ=" crossorigin="anonymous"></script> <!-- sortablejs -->
+    
+</body><!--end::Body-->
+
+</html>
