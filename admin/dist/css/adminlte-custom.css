@@ -13045,7 +13045,7 @@ textarea.form-control-lg {
 .sidebar-brand .brand-link .brand-image {
   float: left;
   width: auto;
-  max-height: 33px;
+  max-height: 38px;
   line-height: 0.8;
 }
 .sidebar-brand .brand-link .brand-image-xs {
@@ -15862,4 +15862,8 @@ ul.leaders span + span {
         position: absolute;
         right: 0;
         padding-left: 5px; /* space right of dots */
+    }
+
+  .info-box#dashboard-summary-box{
+        cursor:pointer;
     }
