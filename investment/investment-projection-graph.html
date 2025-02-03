@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Khumbu</title><!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css" integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous"><!--end::Fonts--><!--begin::Third Party Plugin(OverlayScrollbars)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.3.0/styles/overlayscrollbars.min.css" integrity="sha256-dSokZseQNT08wYEWiz5iLI8QPlKxG+TswNRD8k35cpg=" crossorigin="anonymous"><!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Third Party Plugin(Bootstrap Icons)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" integrity="sha256-Qsx5lrStHZyR9REqhUF8iQt73X06c8LGIUPzpOhwRrI=" crossorigin="anonymous"><!--end::Third Party Plugin(Bootstrap Icons)--><!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="../admin/dist/css/bootstrap-icons/bootstrap-icons.min.css"><!--end::Required Plugin(AdminLTE)--><!-- apexcharts -->
@@ -27,7 +27,7 @@
                     <li class="nav-item d-none d-md-block"> <a href="../index.html" class="nav-link"><i class="bi bi-speedometer"></i> Dashboard</a> </li>
                     <li class="nav-item d-none d-md-block"> <a href="../travel.html" class="nav-link">Travel</a> </li>
                     <li class="nav-item d-none d-md-block"> <a href="../business.html" class="nav-link">Business</a> </li>
-                    <li class="nav-item d-none d-md-block"> <a href="javascript:void(0);" class="nav-link">Investment</a> </li>
+                    <li class="nav-item d-none d-md-block"> <a href="../investment.html" class="nav-link">Investment</a> </li>
 
                 </ul> <!--end::Start Navbar Links--> <!--begin::End Navbar Links-->
                 <ul class="navbar-nav ms-auto"> <!--begin::Navbar Search-->
@@ -53,9 +53,6 @@
                     
                     <li class="nav-item"> <a class="nav-link"  href="#" role="button"> <i class="bi bi-gear-fill"></i> Settings </a> </li> <!--end::Navbar Search--> <!--begin::Messages Dropdown Menu-->
                     <li class="nav-item"> <a class="nav-link"  href="#" role="button"> <i class="bi bi-question-circle-fill"></i>  Help </a> </li>
-                    
-                    
-                
                 </ul> <!--end::End Navbar Links-->
             </div> <!--end::Container-->
         </nav> <!--end::Header--> <!--begin::Sidebar-->
@@ -67,103 +64,87 @@
                     
                    
                 <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-calculator-fill"></i>
+                    <li class="nav-item"> <a href="#investCalc" class="nav-link"> <i class="nav-icon bi bi-calculator-fill"></i>
                         <p>
-                           Travel Calculator
+                           Investment Calculator
                         </p>
                     </a>
                 </li> 
-                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-clipboard-data-fill"></i>
-                <p>
-                   System Report
-                </p>
-                </a>
-               </li>
+                
             </ul> 
           
         </nav>
             </div>
         </aside>
         <main class="app-main"> <!--begin::App Content Header-->
-            <div class="app-content-header"> <!--begin::Container-->
+          <div class="app-content-header"> <!--begin::Container-->
                 <div class="container-fluid"> <!--begin::Row-->
                     <div class="row">
                       <div class="col-sm-6">
-                        <h4 class="mb-0">Investment</h4>
+                        <h4 class="mb-0">Investment Details</h4>
                       </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-end">
-                                <li class="breadcrumb-item"><a href="./index.html   ">..</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">
-                                    Investment
+                                <li class="breadcrumb-item"><a href="../index.html   ">..</a></li>
+                                <li class="breadcrumb-item" aria-current="page">
+                                    <a href="../investment.html">Investment</a>
                                 </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                  Investment Details
+                              </li>
                             </ol>
                         </div>
                     </div> <!--end::Row-->
                 </div> <!--end::Container-->
             </div> <!--end::App Content Header--> <!--begin::App Content-->
-            <div class="app-content"> <!--begin::Container-->
-                <div class="container-fluid  main"> <!--begin::Row-->
-                  <div class="row">
-                            <div class="col-md-4 col-sm-6 col-12">
-                                <div class="info-box  bg-gradient shadow"> <span class="info-box-icon fs-1"> <i class="bi bi-lightbulb text-success"></i> </span>
-                                    <div class="info-box-content"> <span class="info-box-text fw-bold fs-5 p-2">Explore Investment Opportunities </span> 
-                                      <span class="mt-3">Discover individual and group investment options with details on performance, risk taking and terms.</span>
-                                      <span class="d-flex justify-content-center"><a href="./investment/investment-options.html" class="btn btn-outline-success mb-3 mt-3">Investment Options</a></span>  
-                                    </div> <!-- /.info-box-content -->
-                                </div> <!-- /.info-box -->
-                            </div> <!-- /.col -->
-                            <div class="col-md-4 col-sm-6 col-12">
-                              <div class="info-box  bg-gradient shadow"> <span class="info-box-icon fs-1"> <i class="bi bi-journal-medical text-success"></i> </span>
-                                  <div class="info-box-content"> <span class="info-box-text fw-bold fs-5 p-2">Investment Portfolio </span> 
-                                    <span class="mt-3">Track your current Investments, performance over time and projection returns.</span>
-                                    <span class="d-flex justify-content-center"><a href="./investment/investment-portfolio.html" class="btn btn-outline-success mb-3 mt-3">Investment Portfolio</a></span>  
-                                  </div> <!-- /.info-box-content -->
-                              </div> <!-- /.info-box -->
-                          </div> <!-- /.col -->
-                          <div class="col-md-4 col-sm-6 col-12">
-                            <div class="info-box  bg-gradient shadow"> <span class="info-box-icon fs-1"> <i class="bi bi-people text-success"></i> </span>
-                                <div class="info-box-content"> <span class="info-box-text fw-bold fs-5 p-2">Group Investment</span> 
-                                  <span class="mt-3">Join or view group investments, see maximum limits and mnake a contribution.</span>
-                                  <span>&nbsp;</span>
-                                  <span class="d-flex justify-content-center"><a href="#" class="btn btn-outline-success mb-3 mt-3">Group Investment</a></span>  
-                                </div> <!-- /.info-box-content -->
-                            </div> <!-- /.info-box -->
-                        </div> <!-- /.col -->
-                  </div>  
+            <div class="app-content-header"> <!--begin::Container-->
+                <div class="container-fluid"> <!--begin::Row-->
+                  
+                    <div class="row info-box">
+                      <div class="col-sm-12"><a href="investment-details.html" title="back" class="text-primary fs-1"><i class="bi bi-chevron-left"></i></a></div> 
+                        <div class="col-sm-4 mt-3 p-5">
+                            <p><span class="fw-bold">Minimum Investment:</span> R10 0000</p>
+                            <p><span class="fw-bold">Return:</span> 10% Per Month</p>
+                            <p><span class="fw-bold">Risk Level:</span> Low to Medium</p>
+                        </div>
 
-                  <div class="row mt-4">
-                    <div class="col-md-4 col-sm-6 col-12">
-                        <div class="info-box  bg-gradient shadow"> <span class="info-box-icon fs-1"> <i class="bi bi-cash-coin text-success"></i> </span>
-                            <div class="info-box-content"> <span class="info-box-text fw-bold fs-5 p-2">Investment Savings </span> 
-                              <span class="mt-3">Save money that is not invested into Khumbulekhaya.</span>
-                              <span>&nbsp;</span>
-                              <span class="d-flex justify-content-center"><a href="#" class="btn btn-outline-success mb-3 mt-3">Make a Deposit</a></span>  
-                            </div> <!-- /.info-box-content -->
-                        </div> <!-- /.info-box -->
-                    </div> <!-- /.col -->
-                    <div class="col-md-4 col-sm-6 col-12">
-                      <div class="info-box  bg-gradient shadow"> <span class="info-box-icon fs-1"> <i class="bi bi-hourglass-split text-success"></i> </span>
-                          <div class="info-box-content"> <span class="info-box-text fw-bold fs-5 p-2">Investment History </span> 
-                            <span class="mt-3">Access your past investments and transaction history for transparency and analysis.</span>
-                            <span class="d-flex justify-content-center"><a href="./investment/investment-performance-history.html" class="btn btn-outline-success mb-3 mt-3">Investment History</a></span>  
-                          </div> <!-- /.info-box-content -->
-                      </div> <!-- /.info-box -->
-                  </div> <!-- /.col -->
-                  <div class="col-md-4 col-sm-6 col-12">
-                    <div class="info-box  bg-gradient shadow"> <span class="info-box-icon fs-1"> <i class="bi bi-bar-chart-line text-success"></i> </span>
-                        <div class="info-box-content"> <span class="info-box-text fw-bold fs-5 p-2">Income Tracking</span> 
-                          <span class="mt-3">Track income generated through Khumbulekhaya community services.</span>
-                          <span>&nbsp;</span>
-                          <span class="d-flex justify-content-center"><a href="investment/income-tracking.html" class="btn btn-outline-success mb-3 mt-3">Income Tracking</a></span>  
-                        </div> <!-- /.info-box-content -->
-                    </div> <!-- /.info-box -->
-                </div> <!-- /.col -->
-          </div> 
-                </div>
-            </div>    
-            </div>
-          </main>
+                        <div class="col-sm-8 mt-5">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-sm-6 col-12 mt-0">
+                                  <div id="chart"></div>
+                                </div> <!-- /.col -->
+
+                            </div> <!--end::Different Height--> <!--begin::Different Width-->
+                        </div>
+                    </div> <!--end::Row-->
+                </div> <!--end::Container-->
+            </div> <!--end::App Content Header--> <!--begin::App Content-->
+                <!--------ADD INVESTMENT CALCULATOR ------->
+                <div id="investCalc" class="modal-window">
+                    <div class="container-fluid"> <!--begin::Row-->
+                        <a href="#" title="Close" class="modal-close"><i class="bi bi-x-lg text-dark fs-5"></i></a>
+    
+                        <div><h4 class="fw-bold">Calculate Projections</h4></div>
+                             <div class="row mt-5 investCalc-container" id="investCalc-container"> <!--begin::Col-->
+                                <div class="col-12 investCalc-wrapper">
+
+                                    <div class="mb-3"><label class="form-label">Investment Amount:</label> <div class="input-group w-50"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input class="form-control" type="text" id="investmentAmount" placeholder="0"></div>
+                                  
+                                    <div class="mb-3"><label class="form-label">Return on Investment (<span class="fw-bold">ROI</span>): 10% Per Month</label> <div class="input-group w-25"><span class="input-group-text fw-bold" id="inputGroupPrepend">R</span><input class="form-control" type="text" id="returnAmount" placeholder="0" disabled></div>
+
+                                    <div class="mb-3"> <label class="form-label">Number of Months:</label> <input type="number" class="form-control w-25" id="investmentMonths" min="1" max="12" value="1"></div>
+                                    <div class="mb-3">
+                                    <div class="mb-3"> <label class="form-label">Total Investment:</label> <input type="text" class="form-control w-25" id="investmentTotal" placeholder="0"></div>
+
+                                        <a href="javascript:void(0);" class="btn btn-primary" id="invCalculate">Calculate</a>
+                                    </div>
+                                    
+                                </div>  
+                        </div> 
+                    </div> 
+                   </div>                      
+                <!-----END ADD INVESTMENT CALCULATOR------>
+       </main>
     </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
  <!-- <div id = "loading_indicator"> </div>-->
  <div id="loading_indicator">
@@ -180,8 +161,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
     <script src="../admin/dist/js/adminlte.js"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
     <script src="../admin/dist/js/loading.js"></script>
+
     <script>
         $(".triprequestform-wrapper").load("add-trip.html");
+          
+          $("#invCalculate").click(function(){
+           var invAmount = document.getElementById('investmentAmount').value;
+           var retAmount = invAmount * 0.10;
+           var totalInvest = document.getElementById('investmentTotal').value;
+           var invMonths = document.getElementById('investmentMonths').value;
+           //var invTotal = document.getElementById('investmenTotal').value;
+            
+            invAmount = parseInt(invAmount)|| 0;
+            retAmount = parseInt(retAmount);
+            totalInvest = parseInt(totalInvest);
+            invMonths = parseInt(invMonths);
+            //invTotal = parseInt(invTotal);
+
+            //invTotal = (retAmount * invMonths) + invAmount;
+
+            document.getElementById('returnAmount').value = retAmount;
+            retAmount =  document.getElementById('returnAmount').value;
+
+            document.getElementById('investmentTotal').value = (retAmount*invMonths)+invAmount;
+
+           
+
+          });
+
+
     </script>
     <script>
         
@@ -267,5 +275,54 @@
     result.appendChild(list);
   }
 })();
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js" integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8=" crossorigin="anonymous"></script>
+<script>
+
+        //-------------
+        // - LINE CHART -
+        //-------------
+
+        var options = {
+          series: [{
+            name: "Khumbu Investment",
+            data: [10 , 60]
+        }],
+          chart: {
+          height: 350,
+          type: 'line',
+          zoom: {
+            enabled: false
+          }
+        },
+        colors:['#42983f'],
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight',
+        },
+        title: {
+          text: 'Investment Projections',
+          align: 'left'
+        },
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: ['Jan', 'feb'],
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+        //-----------------
+        // - END LINE CHART -
+        //-----------------
 </script>
     
